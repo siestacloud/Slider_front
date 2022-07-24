@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="css/desktop.css">
 
-    <title>Document</title>
+
+    <title>Slider</title>
 </head>
+
 <body>
-    <div>test</div>
+    <div class="wrapper">
+        <header class="header">
+            <a href="" class="header__logo"></a>
+            <!-- навигационное меню -->
+            <nav class="header__menu"></nav>
+        </header>
+        <main class="main">
+            <section class="content mod__horizontal_margin">
+                <div class="content__headline">Completed projects</div>
+                <div class="content__desc">Only a small part of the work performed by our company is presented on the
+                    site. For 14 years on in the construction
+                    market we have made happy more than 1000 families</div>
+                <div class="content__items">
+                    <div class="content__item">
+                        <p class="item__headline">City:</p>
+                        <p class="item__desc">Rostov-on-Don <br>
+                            LCD admiral</p>
+                    </div>
+                    <div class="content__item">
+                        <p class="item__headline">apartment area:</p>
+                        <p class="item__desc">81 m2</p>
+                    </div>
+                    <div class="content__item">
+                        <p class="item__headline">Repair time:</p>
+                        <p class="item__desc">3.5 months</p>
+                    </div>
+                    <div class="content__item">
+                        <p class="item__headline">Repair Cost:</p>
+                        <p class="item__desc">Upon request</p>
+                    </div>
+                </div>
+                <div class="content__submenu ">
+                    <div class="arrow left">&#10229;</div>
+                    <div class="content__center">
+                        <div class="content__circle"></div>
+                        <div class="content__circle"></div>
+                        <div class="content__circle"></div>
+                    </div>
+                    <div class="arrow right">&#10230;</div>
+                </div>
+            </section>
+            <section class="slider mod__horizontal_margin">
+                <nav class="slider__items">
+                    <div class="slider__item mod__hover_solid">Rostov-on-Don, Admiral</div>
+                    <div class="slider__item mod__hover_solid">Rostov-on-Don, Admiral</div>
+                    <div class="slider__item mod__hover_solid">Rostov-on-Don, Admiral</div>
+                </nav>
+                <div class="slider__images">
+                    <div class="image n1 active" style="background-image:url(img/i12.png);" data-index="1"></div>
+                </div>
+                <div class="slider__arrows">
+                    <div class="slider__arrow left">&#9668;</div>
+                    <div class="slider__arrow right">&#9658;</div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+
     <script src="js/app.js"></script>
 </body>
+
 </html>

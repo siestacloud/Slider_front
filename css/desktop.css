@@ -1,0 +1,33 @@
+@media screen and (min-width: 830px) {
+    .main {
+        display: grid;
+        grid-template: 1fr / 1fr minmax(auto, 500px) minmax(auto, 600px) 1fr;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    .content {
+        grid-area: 1/2;
+        text-align: start;
+    }
+
+    .content__items {
+        text-align: start;
+        justify-items: start;
+    }
+
+    .content__submenu {
+        display: flex;
+    }
+
+
+    .slider__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider__arrows{
+        display: none;
+    }
+}
