@@ -15,13 +15,19 @@
 </head>
 
 <body>
+    <!-- оболочка прибивает футер -->
     <div class="wrapper">
+        <!-- шапка -->
         <header class="header">
+            
             <a href="" class="header__logo"></a>
             <!-- навигационное меню -->
             <nav class="header__menu"></nav>
         </header>
+        <!-- блок с основным контентом -->
         <main class="main">
+            
+            <!-- секция с текстовым контентом -->
             <section class="content mod__horizontal_margin">
                 <div class="content__headline">Completed projects</div>
                 <div class="content__desc">Only a small part of the work performed by our company is presented on the
@@ -46,28 +52,23 @@
                         <p class="item__desc">Upon request</p>
                     </div>
                 </div>
-                <div class="content__submenu ">
-                    <div class="arrow left">&#10229;</div>
-                    <div class="content__center">
-                        <div class="content__circle"></div>
-                        <div class="content__circle"></div>
-                        <div class="content__circle"></div>
-                    </div>
-                    <div class="arrow right">&#10230;</div>
+                <div class="content__submenu slider__click">
+                    <div class="slider__arrow arrow left">&#10229;</div>
+                    <div class="slider__dots"></div>
+                    <div class="slider__arrow arrow right">&#10230;</div>
                 </div>
             </section>
+            
+            <!-- секция со слайдером -->
             <section class="slider mod__horizontal_margin">
                 <nav class="slider__items">
-                    <div class="slider__item mod__hover_solid">Rostov-on-Don, Admiral</div>
-                    <div class="slider__item mod__hover_solid">Rostov-on-Don, Admiral</div>
-                    <div class="slider__item mod__hover_solid">Rostov-on-Don, Admiral</div>
                 </nav>
                 <div class="slider__images">
-                    <div class="image n1 active" style="background-image:url(img/i12.png);" data-index="1"></div>
+                    <!-- <div class="image n1 active" style="background-image:url(img/i12.png);" data-index="1"></div> -->
                 </div>
-                <div class="slider__arrows">
-                    <div class="slider__arrow left">&#9668;</div>
-                    <div class="slider__arrow right">&#9658;</div>
+                <div class="slider__arrows slider__click">
+                    <div class="slider__arrow mod__style left">&#9668;</div>
+                    <div class="slider__arrow mod__style right">&#9658;</div>
                 </div>
             </section>
         </main>
